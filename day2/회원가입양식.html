@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<!--
+스타일시트를 적용하는 방법은 2가지가 있음
+1.인라인 방식    : 해당태그에 직접 명시하는 방식 (적용대상이 많을경우 효율성 저하)
+2.임베디드 방식 :  style 태그에 일괄 적용하는 방식 
+-문법형식 => 어떤 태그를 대상으로 어떠한 처리를 할지 표현하면 된다..
+ex) td{font-size:9pt} =모든 td안에 있는 font-size를 9pt로 맞춘다..
+-->
+<style>
+/*
+아래와 같은 문법형식에서 대상을 가리켜, 선택자라 한다.
+ex)td 선택자
+*/
+table{
+		border:20px dotted red; /*두께를 20 , 실선 , 빨간색 선  solid 실선 dotted 점선*/
+}
+td{
+	font-size:9pt;
+	background:yellow;
+}
+input{
+		background:dodgerblue;
+		color:white; /*그냥 color인 경우는 글씨색을 의미*/
+}
+select{
+		background:green;
+		color:white;
+}
+/*선택자로 아이디를 사용할 경우..#을 붙인다*/
+#t_name{
+				background:pink;
+}
+body{
+		background:black;
+}
+</style>
+</head>
+<body>
+<table border="2px" width="600px" align="center">
+	<tr>
+		<td colspan="2" align="center" bgcolor="yellow" style="font-size:20px">
+회 원 가 입
+		</td>
+	</tr>
+	<tr>
+		<td>
+		ID
+		</td>
+		<td>
+		<input type="text" placeholder="아이디를 입력하세요" size="38" maxlength="20">
+		</td>
+	</tr>
+	<tr>
+		<td>
+		Password
+		</td>
+		<td>
+		<input type="password" placeholder="비밀번호를 입력하세요" size="38" maxlength="20">
+		</td>
+	</tr>
+	<tr>
+		<td>
+		NAME
+		</td>
+<td><input type="text" placeholder="이름" size="15" maxlength="7" id="t_name"></td>
+</tr>
+<tr>
+<td>연락처</td>
+<td>
+<select>
+<option>010</option>
+<option>011</option>
+<option>018</option>
+<option>019</option>
+</select>
+-<input type="text" placeholder="앞자리" size="7"/>
+-<input type="text" placeholder="뒷자리" size="9"/>
+</td>
+<tr>
+<td>취미</td>
+<td>
+꿀잠<input type="checkbox"/>
+늦잠<input type="checkbox"/>
+낮잠<input type="checkbox"/>
+일찍자<input type="checkbox"/>
+</td>
+</tr>
+<tr>
+<td>email</td>
+<td>
+<input type="text" placeholder="이메일을 입력하세요" size="15" maxlength="20">@
+<select>
+<option>naver.com</option>
+<option>daum.com</option>
+<option>gougle.com</option>
+<option>nate.com</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>email 수신동의</td>
+<td>
+예<input type="radio" name="receive"/ >
+아니요<input type="radio" name="receive"/ >
+</td>
+</tr>
+<tr>
+<td>우편번호</td>
+<td>
+<input type="text" placeholder="우편번호" size="10" maxlength="8" readonly/ >
+<button>우편번호 검색</button>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<button>가입하기</button>
+</td>
+</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>배경</title>
+<style>
+/* body에 배경이미지 적용하기
+     .. 상위폴더
+	 . this 객체
+	 CSS배경 특징- 이미지가 단일 출력되는 것이 아니라, 화면 끝까지 반복되는 패턴으로 출력...
+	 다른 태그 요소와 물리적인 충돌이 발생하지 않는다.(즉, 컨텐츠가 뒤에 배경으로 설정된다.)
+*/
+body{
+		background-image:url("../images/tree.jpg");
+		background-repeat:repeat-x; /*행으로 생성*/
+		background-repeat:repeat-y; /*열로 생성*/
+		background-repeat:no-repeat; /* 패턴 삭제 한개만사용*/
+		background-position: top right; /*위치적용*/
+		font-size=12px;
+		
+}
+</style>
+</head>
+<body>
+<img src="../images/tree.jpg" width="100px"/>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+<p> Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+<p> Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. </p>
+Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+</body>
+</html>
