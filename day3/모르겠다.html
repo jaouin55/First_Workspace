@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+
+<style>
+
+#ball{
+		width:130px;
+		height:130px;
+		animation-name:aniBg;
+		animation-duration:1.5s;
+		animation-iteration-count:infinite; 
+		animation-direction:alternate; 
+		position:absolute;
+		transform: translate(0px,100px);
+	}
+#ball2{
+		width:50px;
+		height:50px;
+		background:#343f3a;
+		animation-name:aniBg2;
+		animation-duration:1.5s;
+		animation-iteration-count:infinite;
+		animation-direction:alternate;
+		position:absolute;
+		border-radius:100%;
+}
+
+@keyframes aniBg{
+				from{
+						left:0px;
+						top:0px;
+     }
+				to{
+					left:0px;
+					top:67%;
+			
+	}
+}
+@keyframes aniBg2{
+				from{
+						
+					width:50px;
+					left:0px;
+					top:85%;
+					
+     }
+				to{
+					
+					width:120px;
+					left:0px;
+					top:85%;
+
+	}
+}
+</style>
+
+
+</head>
+<body>
+
+    <img id="ball" src="../images/ball.png"/>
+	<div id="ball2"></div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+
+<style>
+/*menu를 묶어놓을 Box에 대한 클래스 정의*/
+.menu{
+		width:190px;
+		background:yellow;
+}
+/*선택자는 조합하여 사용할 수 있다.
+선택자(menu) 뒤에 한칸을 띄우면 하위요소를 가리키는 것임*/
+.menu a{
+		display:block; /*inline 속성을 block으로 전환: 너비와 높이가 가능(즉 크기를 가질 수 있다)*/
+		text-decoration:none; /*밑줄 없애기*/
+		background-color:RGB(220,220,220);
+		color:#000000;
+		/*a 태그를 이루는 box와 그 안에 있는 내용이 너무 붙을때 간격 벌리는 방법*/
+		padding:10px;
+}
+/*유사클래스(:)를 이용하여 링크Tag에 마우스 올려놓으면 배경색 바꾸기*/
+.menu a:hover{
+		background-color:#cccccc;
+}
+/*a태그에 적용된 클래스*/
+.menu a.active{
+		background-color:#4caf50;
+		color:#FFFFFF;
+}
+
+</style>
+</head>
+
+<div class="menu">
+		<a href="#" class="active">3일차</a>
+		<a href="./day3/레이아웃.html" target="myframe">레이아웃 학습</a>
+		<a href="./day3/인라인블럭.html" target="myframe">inline-block</a>
+		<a href="./day3/박스모델.html" target="myframe">Box model</a>
+		<a href="./day3/트랜지션.html" target="myframe">Transition(전이,변화)</a>
+		<a href="./day3/동영상.html" target="myframe">동영상 제어</a>
+		<a href="./day3/애니메이션.html" target="myframe">애니메이션</a>
+		<a href="./day3/변형.html" target="myframe">transform(변형)</a>
+</div>
+<div class="menu">
+		<a href="#" class="active">4일차</a>
+		<a href="#">example01</a>
+		<a href="#">example02</a>
+		<a href="#">example03</a>
+		<a href="#">example04</a>
+</div>
+
+</body>
+</html>

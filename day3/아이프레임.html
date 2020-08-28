@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>아이프레임</title>
+<style>
+/*iframe의 위치,크기를 조절해보자*/
+iframe{
+		position:absolute;
+		left:500px;
+		top:200px;
+		border:0px;
+}
+
+</style>
+</head>
+<body>
+<!--
+기존프레임의 단점 : 고전적 프레임은 화면을 횡단 or 종단으로 분리시켜 버리므로,
+						 화면이 협소해지고, 요즘 트랜드에 적합하지 않음.
+해결책 ) 크기와 위치를 자유롭게 설정할 수 있는 iframe을 많이 사용한다.
+-->
+
+<a href="https://www.coupang.com/" target="main">쿠팡으로 이동</a>
+
+<iframe src="http://nate.com" name="main" scrolling="no" width="800px" height="800px"> </iframe>
+
+
+</body>
+</html>
